@@ -1,3 +1,6 @@
 digraph CS{
 	computer_science[label="Computer Science"]
+	computational_science[label="Computational Science"]
+
+	computer_science -> computational_science //rich; come back to this later.
 }
