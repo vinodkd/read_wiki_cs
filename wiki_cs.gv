@@ -1,6 +1,8 @@
 digraph CS{
-	computer_science[label="Computer Science"]
-	computational_science[label="Computational Science"]
+	computer_science[label="Computer Science",url="http://en.wikipedia.org/wiki/Computer_science"]
+	computational_science[label="Computational Science",url="http://en.wikipedia.org/wiki/Computational_science"]
+	theoretical_computer_science[label="Theoretical Computer Science",url="http://en.wikipedia.org/wiki/Theoretical_computer_science"]
 
 	computer_science -> computational_science //rich; come back to this later.
+	computer_science -> theoretical_computer_science
 }
