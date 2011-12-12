@@ -3,8 +3,12 @@ digraph CS{
 	computational_science[label="Computational Science",url="http://en.wikipedia.org/wiki/Computational_science"]
 	theoretical_computer_science[label="Theoretical Computer Science",url="http://en.wikipedia.org/wiki/Theoretical_computer_science"]
 	webcasts[label="Webcasts", url="http://www.lecturefox.com/computerscience/"]
+	info_theory[label="Information Theory",url="http://en.wikipedia.org/wiki/Information_theory"]
+	entropy[label="Entropy", url="http://en.wikipedia.org/wiki/Entropy_(information_theory)"]	
 
 	computer_science -> computational_science //rich; come back to this later.
 	computer_science -> theoretical_computer_science
 	computer_science -> webcasts // i goofed off today :)
+	computer_science -> info_theory // didnt understand the math in this page and the next at all. read again.
+	info_theory -> entropy
 }
