@@ -1,14 +1,55 @@
 digraph CS{
-	computer_science[label="Computer Science",url="http://en.wikipedia.org/wiki/Computer_science"]
-	computational_science[label="Computational Science",url="http://en.wikipedia.org/wiki/Computational_science"]
-	theoretical_computer_science[label="Theoretical Computer Science",url="http://en.wikipedia.org/wiki/Theoretical_computer_science"]
-	webcasts[label="Webcasts", url="http://www.lecturefox.com/computerscience/"]
-	info_theory[label="Information Theory",url="http://en.wikipedia.org/wiki/Information_theory"]
-	entropy[label="Entropy", url="http://en.wikipedia.org/wiki/Entropy_(information_theory)"]	
+  node[$UNREAD]
+  rankdir=LR
+  
+  computer_science[$READ,label="Computer Science",URL="$WIKI/Computer_science"]
+	  subgraph cluster_history{
+      achievements
+      label="History"
+    }
 
-	computer_science -> computational_science //rich; come back to this later.
-	computer_science -> theoretical_computer_science
+    subgraph cluster_philosophy{
+      name_of_field
+      label="Philosophy"
+    }
+    subgraph cluster_areas{
+      subgraph_theoretical_cs{
+        theoretical_cs_main[$READ,label="Theoretical Computer Science",URL="$WIKI/Theoretical_computer_science"]
+
+        theory_of_computation
+      	
+        subgraph cluster_info_theory{
+          info_theory_main[$READ,label="Information Theory",URL="$WIKI/Information_theory"]
+
+          entropy[$READ,label="Entropy", URL="$WIKI/Entropy_(information_theory)"]	
+        }
+        algos_n_ds
+        pl_theory
+        formal_methods
+        cpd_systems
+        db_n_ir
+        
+        label="Theoretical Computer Science"
+      }
+      
+      subgraph cluster_applied_cs{
+        ai
+        arch_n_engg
+        graphics_n_viz
+        sec_n_crypto
+        // rich, come back to this later.
+	      computational_science[$READ,label="Computational Science",URL="$WIKI/Computational_Science"] 
+      }
+      label="Areas"
+    }
+	
+  webcasts[fillcolor=palegreen,label="Webcasts", URL="http://www.lecturefox.com/computerscience/"]
+  
+  //edges
+  
+  computer_science -> computational_science 
+	computer_science -> theoretical_cs_main
+	computer_science -> info_theory_main // didnt understand the math in this page and the next at all. read again.
+  info_theory_main -> entropy
 	computer_science -> webcasts // i goofed off today :)
-	computer_science -> info_theory // didnt understand the math in this page and the next at all. read again.
-	info_theory -> entropy
 }
