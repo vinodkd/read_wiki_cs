@@ -13,7 +13,7 @@ digraph CS{
       label="Philosophy"
     }
     subgraph cluster_areas{
-      subgraph_theoretical_cs{
+      subgraph cluster_theoretical_cs{
         theoretical_cs_main[$READ,label="Theoretical Computer Science",URL="$WIKI/Theoretical_computer_science"]
 
         theory_of_computation
@@ -39,11 +39,13 @@ digraph CS{
         sec_n_crypto
         // rich, come back to this later.
 	      computational_science[$READ,label="Computational Science",URL="$WIKI/Computational_Science"] 
+        
+        label="Applied Computer Science"
       }
       label="Areas"
     }
 	
-  webcasts[fillcolor=palegreen,label="Webcasts", URL="http://www.lecturefox.com/computerscience/"]
+  webcasts[$READ,label="Webcasts", URL="http://www.lecturefox.com/computerscience/"]
   
   //edges
   
