@@ -4,6 +4,7 @@ digraph CS{
   
   computer_science[$READ,label="Computer Science",URL="$WIKI/Computer_science"]
 	  subgraph cluster_history{
+      history_main[$READ,label="History - main",URL="$WIKI/History_of_computer_science"]
       achievements
       label="History"
     }
@@ -54,4 +55,5 @@ digraph CS{
 	computer_science -> info_theory_main // didnt understand the math in this page and the next at all. read again.
   info_theory_main -> entropy
 	computer_science -> webcasts // i goofed off today :)
+  computer_science -> history_main
 }
