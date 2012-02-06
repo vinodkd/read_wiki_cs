@@ -56,4 +56,5 @@ digraph CS{
   info_theory_main -> entropy
 	computer_science -> webcasts // i goofed off today :)
   computer_science -> history_main
+  streaming_algorithms [$READ,label="Streaming Algorithms",URL="$WIKI/Streaming_algorithm"]
 }
