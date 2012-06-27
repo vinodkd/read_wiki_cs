@@ -46,8 +46,10 @@ digraph CS{
       label="Areas"
     }
 	
+  streaming_algorithms [$READ,label="Streaming Algorithms",URL="$WIKI/Streaming_algorithm"]
   webcasts[$READ,label="Webcasts", URL="http://www.lecturefox.com/computerscience/"]
   linda[$READ,label="linda", URL="http://en.wikipedia.org/wiki/Linda_(coordination_language)"]
+  flow_based_programming[$READ,label="flow based programming", URL="http://en.wikipedia.org/wiki/Flow-based_programming"]
   
   //edges
   
@@ -57,5 +59,6 @@ digraph CS{
   info_theory_main -> entropy
 	computer_science -> webcasts // i goofed off today :)
   computer_science -> history_main
-  streaming_algorithms [$READ,label="Streaming Algorithms",URL="$WIKI/Streaming_algorithm"]
+  
+  flow_based_programming -> linda
 }
