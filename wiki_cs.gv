@@ -47,6 +47,7 @@ digraph CS{
     }
 	
   webcasts[$READ,label="Webcasts", URL="http://www.lecturefox.com/computerscience/"]
+  linda[$READ,label="linda", URL="http://en.wikipedia.org/wiki/Linda_(coordination_language)"]
   
   //edges
   
