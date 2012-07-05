@@ -50,6 +50,7 @@ digraph CS{
   webcasts[$READ,label="Webcasts", URL="http://www.lecturefox.com/computerscience/"]
   linda[$READ,label="linda", URL="http://en.wikipedia.org/wiki/Linda_(coordination_language)"]
   flow_based_programming[$READ,label="flow based programming", URL="http://en.wikipedia.org/wiki/Flow-based_programming"]
+  programming_paradigms[$READ, label="Programming Paradigms", URL="http://en.wikipedia.org/wiki/Programming_paradigm"]
   
   //edges
   
